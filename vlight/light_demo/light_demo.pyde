@@ -74,20 +74,20 @@ def mousePressed():
     
 # declare oscEvent first so it's caught in the setup phase
 def oscEvent(msg):
-    print('### received osc message: %s' % msg)
     if msg.checkAddrPattern('/dmx') and msg.checkTypetag('ii'):
-        index = msg.get(0).intValue()
+        channel = msg.get(0).intValue()
         value = msg.get(1).intValue()
+
+        print('### received osc message: set channel %3d to %3d' % (channel, value))
         
-        print('setting index %d to %d' % (index, value))
-        
-        if index < num_gs_lights:
-            lights[index].value = value
-        else:
-            shifted_index = index - num_gs_lights
-            rgb_offset = shifted_index % 3
-            par_index = shifted_index // 3
-            lights[num_gs_lights + par_index].rgb_value[rgb_offset] = value
+        for light in lights:
+            if isinstance(light, Bulb):
+                if light.dmx_root == channel:
+                    light.value = value
+            elif isinstance(light, Par3RGB):
+                if light.dmx_root <= channel and channel < light.dmx_root + 3:
+                    rgb_offset = channel - light.dmx_root
+                    light.rgb_value[rgb_offset] = value
            
 # This function is important else the OSC listening server doesn't shut down
 # and blocks any new instance from listening on the same port

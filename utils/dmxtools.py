@@ -27,6 +27,7 @@ def exp_scaling_fn(exp_rate, value_0_1):
 
 def set_dmx(dmx_port, channel, level, exp_scaling= 1.7):
     
+    # TODO remove dict terminal print as this isn't needed now we have processing
     if type(dmx_port) is dict:
         if channel in dmx_port.keys():
             #rescale to 0-1
@@ -39,6 +40,7 @@ def set_dmx(dmx_port, channel, level, exp_scaling= 1.7):
         return
     else:
         
+        # to do with perceptions of light intensity
         if exp_scaling:
             level = exp_scaling_fn(exp_scaling, level)
 
@@ -93,8 +95,8 @@ class OSCDMXSender:
         args = parser.parse_args()
         self.client = udp_client.SimpleUDPClient(args.ip, args.port)
 
-    def setChannel(self, channel, level ):
-        self.client.send_message("/dmx",(channel-1,level))
+    def setChannel(self, channel, level):
+        self.client.send_message("/dmx",(channel, level))
 
 def user_dmx():
     #get dmx devices from user input
@@ -105,6 +107,6 @@ def user_dmx():
         
         dmx_port = DMXConnection(available_ports[which_port])
     else:
-        print("no_dmx")
+        print("no dmx ports found, using OSCDMXSender")
         dmx_port = OSCDMXSender()
     return(dmx_port)
