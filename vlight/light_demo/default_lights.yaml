@@ -1,0 +1,215 @@
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 0
+  size: 50
+  tag: ''
+  value: 100
+  x: 50
+  y: 50
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 1
+  size: 50
+  tag: ''
+  value: 100
+  x: 150
+  y: 50
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 2
+  size: 50
+  tag: ''
+  value: 100
+  x: 250
+  y: 50
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 3
+  size: 50
+  tag: ''
+  value: 100
+  x: 350
+  y: 50
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 4
+  size: 50
+  tag: ''
+  value: 100
+  x: 450
+  y: 50
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 5
+  size: 50
+  tag: ''
+  value: 100
+  x: 50
+  y: 150
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 6
+  size: 50
+  tag: ''
+  value: 100
+  x: 150
+  y: 150
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 7
+  size: 50
+  tag: ''
+  value: 100
+  x: 250
+  y: 150
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 8
+  size: 50
+  tag: ''
+  value: 100
+  x: 350
+  y: 150
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 9
+  size: 50
+  tag: ''
+  value: 100
+  x: 450
+  y: 150
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 10
+  size: 50
+  tag: ''
+  value: 100
+  x: 50
+  y: 250
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 11
+  size: 50
+  tag: ''
+  value: 100
+  x: 150
+  y: 250
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 12
+  size: 50
+  tag: ''
+  value: 100
+  x: 250
+  y: 250
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 13
+  size: 50
+  tag: ''
+  value: 100
+  x: 350
+  y: 250
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 14
+  size: 50
+  tag: ''
+  value: 100
+  x: 450
+  y: 250
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 15
+  size: 50
+  tag: ''
+  value: 100
+  x: 50
+  y: 350
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 16
+  size: 50
+  tag: ''
+  value: 100
+  x: 150
+  y: 350
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 17
+  size: 50
+  tag: ''
+  value: 100
+  x: 250
+  y: 350
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 18
+  size: 50
+  tag: ''
+  value: 100
+  x: 350
+  y: 350
+- !!python/object:utils.types.Bulb
+  dmx_port: null
+  dmx_root: 19
+  size: 50
+  tag: ''
+  value: 100
+  x: 450
+  y: 350
+- !!python/object:utils.types.Par3RGB
+  dmx_port: null
+  dmx_root: 0
+  rgb_value:
+  - 100
+  - 0
+  - 0
+  size: 50
+  tag: ''
+  x: 50
+  y: 450
+- !!python/object:utils.types.Par3RGB
+  dmx_port: null
+  dmx_root: 3
+  rgb_value:
+  - 100
+  - 0
+  - 0
+  size: 50
+  tag: ''
+  x: 150
+  y: 450
+- !!python/object:utils.types.Par3RGB
+  dmx_port: null
+  dmx_root: 6
+  rgb_value:
+  - 100
+  - 0
+  - 0
+  size: 50
+  tag: ''
+  x: 250
+  y: 450
+- !!python/object:utils.types.Par3RGB
+  dmx_port: null
+  dmx_root: 9
+  rgb_value:
+  - 100
+  - 0
+  - 0
+  size: 50
+  tag: ''
+  x: 350
+  y: 450
+- !!python/object:utils.types.Par3RGB
+  dmx_port: null
+  dmx_root: 12
+  rgb_value:
+  - 100
+  - 0
+  - 0
+  size: 50
+  tag: ''
+  x: 450
+  y: 450
