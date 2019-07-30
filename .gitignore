@@ -1,4 +1,12 @@
 *.pyc
 .vscode
 src/
+
+# subfolder for a virtualenv
 lightenv
+
+# mac rubbish
+.DS_Store
+
+# jython rubbish from processing.py
+*.class
