@@ -66,4 +66,5 @@ while 1:
             msg = mt.map_note(mapping, msg)
             note_store_auto.on_msg(msg)
             send_msg(midi_out_port, msg)
+    time.sleep(0.01)
 
